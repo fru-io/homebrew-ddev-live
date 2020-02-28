@@ -1,9 +1,9 @@
 class DdevLive < Formula
   desc "The command-line client for the DDEV Live platform"
   homepage "https://ddev.com"
-  url "https://downloads.ddev.com/ddev-live-cli/v0.3.0/darwin/ddev-live.zip"
-  version "0.3.0"
-  sha256 "bc8318e2b0c0ff21fba913ec3b89a2637476016417be8530c002abf449c5fe0e"
+  url "https://downloads.ddev.com/ddev-live-cli/v0.4.0/darwin/ddev-live.zip"
+  version "0.4.0"
+  sha256 "0611ece6606ccb6b08e968b45716117653e02c7b69b71002f3e9ea9f124a7687"
 
   bottle :unneeded
 
