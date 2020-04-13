@@ -3,7 +3,7 @@ class DdevLive < Formula
   homepage "https://ddev.com"
   url "https://downloads.ddev.com/ddev-live-cli/v0.5.1/brew/ddev-live.zip"
   version "0.5.1"
-  sha256 "ie534933ca2debe03ec43e15a2e246af0b600836bcb7731b6f1fa6bcd9c4a60ab"
+  sha256 "e534933ca2debe03ec43e15a2e246af0b600836bcb7731b6f1fa6bcd9c4a60ab"
 
   bottle :unneeded
 
