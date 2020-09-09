@@ -20,3 +20,7 @@ To update, make these changes to the file at Formula/ddev-live.rb:
 
 6. Confirm that the update works (`brew upgrade ddev-live`)
 
+The steps 1, 2, 3 and 4 are automated [by a script](./hack/update_formula.bash), example usage:
+```
+$ version=0.7.0 ./hack/update_formula.bash
+```
