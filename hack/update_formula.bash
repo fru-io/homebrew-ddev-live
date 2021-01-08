@@ -9,7 +9,7 @@ set -euo pipefail
 
 version=${version:-0.7.0}
 
-git pull
+# git pull
 
 bucket=downloads.ddev.com/ddev-live-cli/v
 sha=$(gsutil cat gs://${bucket}${version}/brew/ddev-live.zip.sha256.txt | awk 'NR==1{print($1)}')
