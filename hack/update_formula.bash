@@ -7,7 +7,7 @@
 
 set -euo pipefail
 
-version=${version:-0.7.0}
+version=${version:-0.9.3}
 
 #git pull
 
@@ -16,9 +16,9 @@ sha=$(gsutil cat gs://${bucket}${version}/brew/ddev-live.zip.sha256.txt | awk 'N
 dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 file="$dir/../Formula/ddev-live.rb"
 
-sed -i 's|\(url "https://'"${bucket}\)"'.*\(/brew/ddev-live.zip\)|\1'"${version}"'\2|' "${file}"
-sed -i 's|\(version "\).*"|\1'"${version}"'"|' "${file}"
-sed -i 's|\(sha256 "\).*"|\1'"${sha}"'"|' "${file}"
+sed -i '' 's|\(url "https://'"${bucket}\)"'.*\(/brew/ddev-live.zip\)|\1'"${version}"'\2|' "${file}"
+sed -i '' 's|\(version "\).*"|\1'"${version}"'"|' "${file}"
+sed -i '' 's|\(sha256 "\).*"|\1'"${sha}"'"|' "${file}"
 
 git commit -am "Bumping version to v${version}"
 echo "verify changes and perform 'git push origin master'"
