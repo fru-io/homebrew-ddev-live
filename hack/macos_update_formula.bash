@@ -7,7 +7,7 @@
 
 set -euo pipefail
 
-version=${version:-0.9.3}
+version=${version:-0.9.5}
 
 #git pull
 
